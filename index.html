@@ -3,86 +3,51 @@
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="GifTastic" content="GifTastic">
     <meta name="author" CCStinson="CC Stinson">
-
-
     <title>CC Stinson GifTastic</title>
 
-    <html>
+    <!-- GifTastic CSS File -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <head>
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 
-        <!-- Multiple CSS Files -->
-        <link rel="stylesheet" type="text/CSS" href="assets/css/style.css">
+    <!-- Ajax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/JavaScript/giphy.js"></script>
-        
-        <title>GifTastic</title>
-    </head>
+    <!-- GifTastic JS File -->
+    <script src="assets/javascript/app.js"></script>
+</head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
+
+    <div id="wrapper">
+
         <div class="container">
-            <h1 class="display-4">The Best Decade EVER - 1980s</h1>
-            <p class="lead">Take a look a these nostalgia 1980s TV shows, commercials, music videos, etc</p>
-        </div>
-        <br>
-        <br>
+            <br>
+            <h1>The Best Decade EVER - 1980s</h1>
+            <br>
+            <div id="page"></div>
 
-        <div class="row">
-            <div class="col-md-9">
-                <h2>Totally Tubular Images</h2>
-                <div class="giphyBox" class="col-md-9">
-                </div>
+            <div id="btns"></div>
+            <br>
+            <div style="float: right;">
+                <form id="newGif-form">
+            <br>
+            <br>
+                    <label for="gifPlaceholder">Add a retro theme</label>
+                    <input class="btn-Input" type="text" id="gifPlaceholder">
+            <br>
+                    <input id="loadGif" type="submit" value="Submit">
+                </form>
             </div>
-            <div class="col-xs-12 col-md-4"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="jumbotron col-xs-12 col-md-12" id="buttons-view"></div>
-        </div>
-        <div class="jumbotron row">
-            <form id="topics-form">
-                <label for="topics-input">Enter your 1980s movie!</label>
-                <input type="text" id="topics-input">
-                <input id="add-topics" type="submit" value="Name movie!">
-            </form>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-12" id="gifs-appear-here">
-                <p class="image">
-                    <br>
-                    <p>
-                        <h2 class="rating"></h2>
-                    </p>
-                    <br>
-                </p>
-            </div>
-        </div>
-        <br>
+            <div id="gifSpace"></div>
 
-        <!-- Bootstrap core JavaScript
-================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-
+        </div>
 
 </body>
-
 </html>
