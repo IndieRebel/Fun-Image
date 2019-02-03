@@ -4,7 +4,7 @@ body, html {
     overflow-x: hidden;
 }
 body {
-    background: url('../images/80s-slang.gif')
+    background-color: #2bd1fc
 }
 #gifSpace{
     margin-top: 8%;
